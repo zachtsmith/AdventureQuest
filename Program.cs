@@ -79,6 +79,13 @@ namespace Quest
             {
                 Console.WriteLine("I guess you did...ok? ...sorta. Still, you should get out of my sight.");
             }
+
+            Console.WriteLine("Would you like to play the adventure again? Enter Y/N: ");
+            string playAgain = Console.ReadLine();
+            if (playAgain == "Y") 
+            {
+                    Main(new string[0]);
+            }
         }
     }
 }

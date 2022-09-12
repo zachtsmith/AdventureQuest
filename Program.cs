@@ -12,6 +12,15 @@ namespace Quest
             Console.WriteLine("Enter your name:");
             
             string userName = Console.ReadLine();
+            Robe robeDescription = new Robe
+            {
+                Colors = new List<string>{"blue", "orange", "white"},
+                LengthOfRobe = 36
+                };
+            
+            Adventurer newPlayer = new Adventurer(userName, robeDescription);
+            Console.WriteLine(newPlayer.GetDescription());
+            
             // Create a few challenges for our Adventurer's quest
             // The "Challenge" Constructor takes three arguments
             //   the text of the challenge
